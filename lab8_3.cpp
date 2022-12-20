@@ -2,10 +2,29 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+	char y;
+	if (x == 'A'){
+		y = 'Z';
+	}
+	
+	if(x > 'A'){
+		y = x-1;
+	}
+	
+	if(x > 'Z'){
+		y = '0';
+	}
+
+	if (x < 'A'){
+		y = '0';
+	}
+	
+
+	return y;
 }
 
 int main(){
+	
 	//Test Case
 	cout << before('A') << "\n";
 	cout << before('B') << "\n";
